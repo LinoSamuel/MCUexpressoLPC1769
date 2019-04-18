@@ -3889,3 +3889,915 @@ arm-none-eabi-size "freertos_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "
 13:58:12 **** Incremental Build of configuration Debug for project freertos_blinky ****
 make -r -j4 all 
 make: Nothing to be done for `all'.
+22:47:27 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+22:47:28 **** Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+22:47:30 **** Build of configuration Debug for project Sem_phore ****
+make -r -j4 all 
+Building file: ../example/src/Sem_phore.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Sem_phore/example/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Sem_phore/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/Sem_phore.d" -MT"example/src/Sem_phore.o" -MT"example/src/Sem_phore.d" -o "example/src/Sem_phore.o" "../example/src/Sem_phore.c"
+Finished building: ../example/src/Sem_phore.c
+ 
+Building target: Sem_phore.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/Debug" -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/Debug" -Xlinker -Map="Sem_phore.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "Sem_phore.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/Sem_phore.o ./example/src/cr_startup_lpc175x_6x.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: Sem_phore.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Sem_phore.axf"; # arm-none-eabi-objcopy -v -O binary "Sem_phore.axf" "Sem_phore.bin" ; # checksum -p LPC1769 -d "Sem_phore.bin";
+   text	   data	    bss	    dec	    hex	filename
+  19020	      8	    824	  19852	   4d8c	Sem_phore.axf
+ 
+22:47:33 **** Incremental Build of configuration Debug for project Sem_phore ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+22:50:19 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+22:50:20 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+22:50:21 **** Incremental Build of configuration Debug for project Sem_phore ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+22:50:23 **** Incremental Build of configuration Debug for project Sem_phore ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+22:50:52 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+22:50:53 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+22:50:54 **** Build of configuration Debug for project Queue_free ****
+make -r -j4 all 
+Building file: ../example/src/Queue_free.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Queue_free/example/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Queue_free/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/Queue_free.d" -MT"example/src/Queue_free.o" -MT"example/src/Queue_free.d" -o "example/src/Queue_free.o" "../example/src/Queue_free.c"
+../example/src/Queue_free.c:33:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:34:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:35:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:36:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:37:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:38:1: error: expected identifier or '(' before string constant
+ "board.h"
+ ^~~~~~~~~
+../example/src/Queue_free.c: In function 'prvSetupHardware':
+../example/src/Queue_free.c:52:1: warning: implicit declaration of function 'SystemCoreClockUpdate' [-Wimplicit-function-declaration]
+ SystemCoreClockUpdate();
+ ^~~~~~~~~~~~~~~~~~~~~
+../example/src/Queue_free.c:53:1: warning: implicit declaration of function 'Board_Init' [-Wimplicit-function-declaration]
+ Board_Init();
+ ^~~~~~~~~~
+../example/src/Queue_free.c:55:1: warning: implicit declaration of function 'Board_LED_Set' [-Wimplicit-function-declaration]
+ Board_LED_Set(0, true);
+ ^~~~~~~~~~~~~
+../example/src/Queue_free.c:55:18: error: 'true' undeclared (first use in this function)
+ Board_LED_Set(0, true);
+                  ^~~~
+../example/src/Queue_free.c:55:18: note: each undeclared identifier is reported only once for each function it appears in
+../example/src/Queue_free.c: In function 'sender_task':
+../example/src/Queue_free.c:67:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+ printf("Send %i to receiver task\n",i);
+ ^~~~~~
+../example/src/Queue_free.c:68:4: warning: implicit declaration of function 'xQueueSend' [-Wimplicit-function-declaration]
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+    ^~~~~~~~~~
+../example/src/Queue_free.c:68:15: error: 'xQueue1' undeclared (first use in this function)
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+               ^~~~~~~
+../example/src/Queue_free.c:68:28: error: 'portTickType' undeclared (first use in this function)
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+                            ^~~~~~~~~~~~
+../example/src/Queue_free.c:68:42: error: expected ')' before numeric constant
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+                                          ^~~~
+../example/src/Queue_free.c:74:1: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+ vTaskDelay(30000);
+ ^~~~~~~~~~
+../example/src/Queue_free.c: In function 'receiver_task':
+../example/src/Queue_free.c:85:5: warning: implicit declaration of function 'xQueueReceive' [-Wimplicit-function-declaration]
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+     ^~~~~~~~~~~~~
+../example/src/Queue_free.c:85:20: error: 'xQueue1' undeclared (first use in this function)
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+                    ^~~~~~~
+../example/src/Queue_free.c:85:39: error: 'portTickType' undeclared (first use in this function)
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+                                       ^~~~~~~~~~~~
+../example/src/Queue_free.c:85:53: error: expected ')' before numeric constant
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+                                                     ^~~~
+../example/src/Queue_free.c:88:23: error: 'false' undeclared (first use in this function)
+ Board_LED_Set(rx_int, false);
+                       ^~~~~
+../example/src/Queue_free.c:90:23: error: 'true' undeclared (first use in this function)
+ Board_LED_Set(rx_int, true);
+                       ^~~~
+../example/src/Queue_free.c: In function 'main':
+../example/src/Queue_free.c:102:1: error: 'xQueue1' undeclared (first use in this function)
+ xQueue1 = xQueueCreate(5, sizeof(int));
+ ^~~~~~~
+../example/src/Queue_free.c:102:11: warning: implicit declaration of function 'xQueueCreate' [-Wimplicit-function-declaration]
+ xQueue1 = xQueueCreate(5, sizeof(int));
+           ^~~~~~~~~~~~
+../example/src/Queue_free.c:104:1: warning: implicit declaration of function 'xTaskCreate' [-Wimplicit-function-declaration]
+ xTaskCreate(sender_task, (signed char *) "sender_task",
+ ^~~~~~~~~~~
+../example/src/Queue_free.c:105:1: error: 'configMINIMAL_STACK_SIZE' undeclared (first use in this function)
+ configMINIMAL_STACK_SIZE, NULL, 3,
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+../example/src/Queue_free.c:105:27: error: 'NULL' undeclared (first use in this function)
+ configMINIMAL_STACK_SIZE, NULL, 3,
+                           ^~~~
+../example/src/Queue_free.c:106:2: error: 'xTaskHandle' undeclared (first use in this function)
+ (xTaskHandle *) NULL);
+  ^~~~~~~~~~~
+../example/src/Queue_free.c:106:15: error: expected expression before ')' token
+ (xTaskHandle *) NULL);
+               ^
+../example/src/Queue_free.c:109:15: error: expected expression before ')' token
+ (xTaskHandle *) NULL);
+               ^
+../example/src/Queue_free.c:110:1: warning: implicit declaration of function 'vTaskStartScheduler' [-Wimplicit-function-declaration]
+ vTaskStartScheduler();
+ ^~~~~~~~~~~~~~~~~~~
+make: *** [example/src/Queue_free.o] Error 1
+22:50:56 **** Incremental Build of configuration Debug for project Queue_free ****
+make -r -j4 all 
+Building file: ../example/src/Queue_free.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Queue_free/example/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Queue_free/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/Queue_free.d" -MT"example/src/Queue_free.o" -MT"example/src/Queue_free.d" -o "example/src/Queue_free.o" "../example/src/Queue_free.c"
+../example/src/Queue_free.c:33:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:34:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:35:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:36:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:37:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+../example/src/Queue_free.c:38:1: error: expected identifier or '(' before string constant
+ "board.h"
+ ^~~~~~~~~
+../example/src/Queue_free.c: In function 'prvSetupHardware':
+../example/src/Queue_free.c:52:1: warning: implicit declaration of function 'SystemCoreClockUpdate' [-Wimplicit-function-declaration]
+ SystemCoreClockUpdate();
+ ^~~~~~~~~~~~~~~~~~~~~
+../example/src/Queue_free.c:53:1: warning: implicit declaration of function 'Board_Init' [-Wimplicit-function-declaration]
+ Board_Init();
+ ^~~~~~~~~~
+../example/src/Queue_free.c:55:1: warning: implicit declaration of function 'Board_LED_Set' [-Wimplicit-function-declaration]
+ Board_LED_Set(0, true);
+ ^~~~~~~~~~~~~
+../example/src/Queue_free.c:55:18: error: 'true' undeclared (first use in this function)
+ Board_LED_Set(0, true);
+                  ^~~~
+../example/src/Queue_free.c:55:18: note: each undeclared identifier is reported only once for each function it appears in
+../example/src/Queue_free.c: In function 'sender_task':
+../example/src/Queue_free.c:67:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+ printf("Send %i to receiver task\n",i);
+ ^~~~~~
+../example/src/Queue_free.c:68:4: warning: implicit declaration of function 'xQueueSend' [-Wimplicit-function-declaration]
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+    ^~~~~~~~~~
+../example/src/Queue_free.c:68:15: error: 'xQueue1' undeclared (first use in this function)
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+               ^~~~~~~
+../example/src/Queue_free.c:68:28: error: 'portTickType' undeclared (first use in this function)
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+                            ^~~~~~~~~~~~
+../example/src/Queue_free.c:68:42: error: expected ')' before numeric constant
+ if(xQueueSend(xQueue1,&i, (portTickType) 1000)){
+                                          ^~~~
+../example/src/Queue_free.c:74:1: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+ vTaskDelay(30000);
+ ^~~~~~~~~~
+../example/src/Queue_free.c: In function 'receiver_task':
+../example/src/Queue_free.c:85:5: warning: implicit declaration of function 'xQueueReceive' [-Wimplicit-function-declaration]
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+     ^~~~~~~~~~~~~
+../example/src/Queue_free.c:85:20: error: 'xQueue1' undeclared (first use in this function)
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+                    ^~~~~~~
+../example/src/Queue_free.c:85:39: error: 'portTickType' undeclared (first use in this function)
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+                                       ^~~~~~~~~~~~
+../example/src/Queue_free.c:85:53: error: expected ')' before numeric constant
+ if (xQueueReceive( xQueue1, &rx_int, (portTickType) 3000 )){
+                                                     ^~~~
+../example/src/Queue_free.c:88:23: error: 'false' undeclared (first use in this function)
+ Board_LED_Set(rx_int, false);
+                       ^~~~~
+../example/src/Queue_free.c:90:23: error: 'true' undeclared (first use in this function)
+ Board_LED_Set(rx_int, true);
+                       ^~~~
+../example/src/Queue_free.c: In function 'main':
+../example/src/Queue_free.c:102:1: error: 'xQueue1' undeclared (first use in this function)
+ xQueue1 = xQueueCreate(5, sizeof(int));
+ ^~~~~~~
+../example/src/Queue_free.c:102:11: warning: implicit declaration of function 'xQueueCreate' [-Wimplicit-function-declaration]
+ xQueue1 = xQueueCreate(5, sizeof(int));
+           ^~~~~~~~~~~~
+../example/src/Queue_free.c:104:1: warning: implicit declaration of function 'xTaskCreate' [-Wimplicit-function-declaration]
+ xTaskCreate(sender_task, (signed char *) "sender_task",
+ ^~~~~~~~~~~
+../example/src/Queue_free.c:105:1: error: 'configMINIMAL_STACK_SIZE' undeclared (first use in this function)
+ configMINIMAL_STACK_SIZE, NULL, 3,
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+../example/src/Queue_free.c:105:27: error: 'NULL' undeclared (first use in this function)
+ configMINIMAL_STACK_SIZE, NULL, 3,
+                           ^~~~
+../example/src/Queue_free.c:106:2: error: 'xTaskHandle' undeclared (first use in this function)
+ (xTaskHandle *) NULL);
+  ^~~~~~~~~~~
+../example/src/Queue_free.c:106:15: error: expected expression before ')' token
+ (xTaskHandle *) NULL);
+               ^
+../example/src/Queue_free.c:109:15: error: expected expression before ')' token
+ (xTaskHandle *) NULL);
+               ^
+../example/src/Queue_free.c:110:1: warning: implicit declaration of function 'vTaskStartScheduler' [-Wimplicit-function-declaration]
+ vTaskStartScheduler();
+ ^~~~~~~~~~~~~~~~~~~
+make: *** [example/src/Queue_free.o] Error 1
+22:51:31 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for `all'.
+22:51:32 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for `all'.
+22:51:32 **** Incremental Build of configuration Debug for project Queue_free ****
+make -r -j4 all 
+Building file: ../example/src/Queue_free.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Queue_free/example/inc" -I"/home/mathew/Desktop/GIT/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/Queue_free/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/Queue_free.d" -MT"example/src/Queue_free.o" -MT"example/src/Queue_free.d" -o "example/src/Queue_free.o" "../example/src/Queue_free.c"
+Finished building: ../example/src/Queue_free.c
+ 
+Building target: Queue_free.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/Debug" -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/Debug" -Xlinker -Map="Queue_free.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "freertos_blinky_Debug.ld" -o "Queue_free.axf"  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/heap_3.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./example/src/Queue_free.o ./example/src/cr_startup_lpc175x_6x.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: Queue_free.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Queue_free.axf"; # arm-none-eabi-objcopy -v -O binary "Queue_free.axf" "Queue_free.bin" ; # checksum -p LPC1769 -d "Queue_free.bin";
+   text	   data	    bss	    dec	    hex	filename
+  19116	      8	    824	  19948	   4dec	Queue_free.axf
+ 
+22:51:34 **** Incremental Build of configuration Debug for project Queue_free ****
+make -r -j4 all 
+make: Nothing to be done for `all'.
+15:41:44 **** Clean-only build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r clean 
+rm -rf  ./src/board.o ./src/board_sysinit.o ./src/lpc_phy_smsc87x0.o  ./src/board.d ./src/board_sysinit.d ./src/lpc_phy_smsc87x0.d  liblpc_board_nxp_lpcxpresso_1769.a
+ 
+15:41:44 **** Clean-only build of configuration Debug for project lpc_chip_175x_6x ****
+make -r clean 
+rm -rf  ./src/adc_17xx_40xx.o ./src/can_17xx_40xx.o ./src/chip_17xx_40xx.o ./src/clock_17xx_40xx.o ./src/cmp_17xx_40xx.o ./src/crc_17xx_40xx.o ./src/dac_17xx_40xx.o ./src/eeprom_17xx_40xx.o ./src/emc_17xx_40xx.o ./src/enet_17xx_40xx.o ./src/gpdma_17xx_40xx.o ./src/gpio_17xx_40xx.o ./src/gpioint_17xx_40xx.o ./src/i2c_17xx_40xx.o ./src/i2s_17xx_40xx.o ./src/iap.o ./src/iocon_17xx_40xx.o ./src/lcd_17xx_40xx.o ./src/pmu_17xx_40xx.o ./src/ring_buffer.o ./src/ritimer_17xx_40xx.o ./src/rtc_17xx_40xx.o ./src/sdc_17xx_40xx.o ./src/sdmmc_17xx_40xx.o ./src/spi_17xx_40xx.o ./src/ssp_17xx_40xx.o ./src/stopwatch_17xx_40xx.o ./src/sysctl_17xx_40xx.o ./src/sysinit_17xx_40xx.o ./src/timer_17xx_40xx.o ./src/uart_17xx_40xx.o ./src/wwdt_17xx_40xx.o  ./src/adc_17xx_40xx.d ./src/can_17xx_40xx.d ./src/chip_17xx_40xx.d ./src/clock_17xx_40xx.d ./src/cmp_17xx_40xx.d ./src/crc_17xx_40xx.d ./src/dac_17xx_40xx.d ./src/eeprom_17xx_40xx.d ./src/emc_17xx_40xx.d ./src/enet_17xx_40xx.d ./src/gpdma_17xx_40xx.d ./src/gpio_17xx_40xx.d ./src/gpioint_17xx_40xx.d ./src/i2c_17xx_40xx.d ./src/i2s_17xx_40xx.d ./src/iap.d ./src/iocon_17xx_40xx.d ./src/lcd_17xx_40xx.d ./src/pmu_17xx_40xx.d ./src/ring_buffer.d ./src/ritimer_17xx_40xx.d ./src/rtc_17xx_40xx.d ./src/sdc_17xx_40xx.d ./src/sdmmc_17xx_40xx.d ./src/spi_17xx_40xx.d ./src/ssp_17xx_40xx.d ./src/stopwatch_17xx_40xx.d ./src/sysctl_17xx_40xx.d ./src/sysinit_17xx_40xx.d ./src/timer_17xx_40xx.d ./src/uart_17xx_40xx.d ./src/wwdt_17xx_40xx.d  liblpc_chip_175x_6x.a
+ 
+15:41:51 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+Building file: ../src/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -DDEBUG_SEMIHOSTING -DDEBUG_ENABLE -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+In file included from ../src/board.c:32:0:
+/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:58:0: warning: "DEBUG_ENABLE" redefined
+ #define DEBUG_ENABLE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+../src/board.c:59:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************
+  
+../src/board.c: In function 'Board_I2C_Init':
+../src/board.c:297:2: warning: enumeration value 'I2C_NUM_INTERFACE' not handled in switch [-Wswitch]
+  switch (id) {
+  ^~~~~~
+Finished building: ../src/board.c
+ 
+Building file: ../src/board_sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -DDEBUG_SEMIHOSTING -DDEBUG_ENABLE -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board_sysinit.d" -MT"src/board_sysinit.o" -MT"src/board_sysinit.d" -o "src/board_sysinit.o" "../src/board_sysinit.c"
+In file included from ../src/board_sysinit.c:32:0:
+/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:58:0: warning: "DEBUG_ENABLE" redefined
+ #define DEBUG_ENABLE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/board_sysinit.c
+ 
+Building file: ../src/lpc_phy_smsc87x0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -DDEBUG_SEMIHOSTING -DDEBUG_ENABLE -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lpc_phy_smsc87x0.d" -MT"src/lpc_phy_smsc87x0.o" -MT"src/lpc_phy_smsc87x0.d" -o "src/lpc_phy_smsc87x0.o" "../src/lpc_phy_smsc87x0.c"
+In file included from /home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/lpc_phy.h:35:0,
+                 from ../src/lpc_phy_smsc87x0.c:33:
+/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:58:0: warning: "DEBUG_ENABLE" redefined
+ #define DEBUG_ENABLE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/lpc_phy_smsc87x0.c
+ 
+Building target: liblpc_board_nxp_lpcxpresso_1769.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_board_nxp_lpcxpresso_1769.a"  ./src/board.o ./src/board_sysinit.o ./src/lpc_phy_smsc87x0.o   
+arm-none-eabi-ar: creating liblpc_board_nxp_lpcxpresso_1769.a
+Finished building target: liblpc_board_nxp_lpcxpresso_1769.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_board_nxp_lpcxpresso_1769.a" ; # arm-none-eabi-objdump -h -S "liblpc_board_nxp_lpcxpresso_1769.a" >"liblpc_board_nxp_lpcxpresso_1769.lss"
+   text	   data	    bss	    dec	    hex	filename
+   2315	      0	      0	   2315	    90b	board.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    202	      0	      0	    202	     ca	board_sysinit.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    856	      0	     18	    874	    36a	lpc_phy_smsc87x0.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+ 
+15:41:53 **** Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+Building file: ../src/adc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/adc_17xx_40xx.d" -MT"src/adc_17xx_40xx.o" -MT"src/adc_17xx_40xx.d" -o "src/adc_17xx_40xx.o" "../src/adc_17xx_40xx.c"
+Finished building: ../src/adc_17xx_40xx.c
+ 
+Building file: ../src/can_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/can_17xx_40xx.d" -MT"src/can_17xx_40xx.o" -MT"src/can_17xx_40xx.d" -o "src/can_17xx_40xx.o" "../src/can_17xx_40xx.c"
+../src/can_17xx_40xx.c: In function 'Chip_CAN_Init':
+../src/can_17xx_40xx.c:751:20: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t i;
+                    ^
+Finished building: ../src/can_17xx_40xx.c
+ 
+Building file: ../src/chip_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/chip_17xx_40xx.d" -MT"src/chip_17xx_40xx.o" -MT"src/chip_17xx_40xx.d" -o "src/chip_17xx_40xx.o" "../src/chip_17xx_40xx.c"
+Finished building: ../src/chip_17xx_40xx.c
+ 
+Building file: ../src/clock_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/clock_17xx_40xx.d" -MT"src/clock_17xx_40xx.o" -MT"src/clock_17xx_40xx.d" -o "src/clock_17xx_40xx.o" "../src/clock_17xx_40xx.c"
+../src/clock_17xx_40xx.c: In function 'Chip_Clock_GetSYSCLKRate':
+../src/clock_17xx_40xx.c:320:2: warning: enumeration value 'SYSCTL_PLLCLKSRC_RESERVED2' not handled in switch [-Wswitch]
+  switch (Chip_Clock_GetMainPLLSource()) {
+  ^~~~~~
+Finished building: ../src/clock_17xx_40xx.c
+ 
+Building file: ../src/cmp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/cmp_17xx_40xx.d" -MT"src/cmp_17xx_40xx.o" -MT"src/cmp_17xx_40xx.d" -o "src/cmp_17xx_40xx.o" "../src/cmp_17xx_40xx.c"
+Finished building: ../src/cmp_17xx_40xx.c
+ 
+Building file: ../src/crc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crc_17xx_40xx.d" -MT"src/crc_17xx_40xx.o" -MT"src/crc_17xx_40xx.d" -o "src/crc_17xx_40xx.o" "../src/crc_17xx_40xx.c"
+Finished building: ../src/crc_17xx_40xx.c
+ 
+Building file: ../src/dac_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dac_17xx_40xx.d" -MT"src/dac_17xx_40xx.o" -MT"src/dac_17xx_40xx.d" -o "src/dac_17xx_40xx.o" "../src/dac_17xx_40xx.c"
+Finished building: ../src/dac_17xx_40xx.c
+ 
+Building file: ../src/eeprom_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/eeprom_17xx_40xx.d" -MT"src/eeprom_17xx_40xx.o" -MT"src/eeprom_17xx_40xx.d" -o "src/eeprom_17xx_40xx.o" "../src/eeprom_17xx_40xx.c"
+Finished building: ../src/eeprom_17xx_40xx.c
+ 
+Building file: ../src/emc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/emc_17xx_40xx.d" -MT"src/emc_17xx_40xx.o" -MT"src/emc_17xx_40xx.d" -o "src/emc_17xx_40xx.o" "../src/emc_17xx_40xx.c"
+Finished building: ../src/emc_17xx_40xx.c
+ 
+Building file: ../src/enet_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/enet_17xx_40xx.d" -MT"src/enet_17xx_40xx.o" -MT"src/enet_17xx_40xx.d" -o "src/enet_17xx_40xx.o" "../src/enet_17xx_40xx.c"
+Finished building: ../src/enet_17xx_40xx.c
+ 
+Building file: ../src/gpdma_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpdma_17xx_40xx.d" -MT"src/gpdma_17xx_40xx.o" -MT"src/gpdma_17xx_40xx.d" -o "src/gpdma_17xx_40xx.o" "../src/gpdma_17xx_40xx.c"
+Finished building: ../src/gpdma_17xx_40xx.c
+ 
+Building file: ../src/gpio_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpio_17xx_40xx.d" -MT"src/gpio_17xx_40xx.o" -MT"src/gpio_17xx_40xx.d" -o "src/gpio_17xx_40xx.o" "../src/gpio_17xx_40xx.c"
+Finished building: ../src/gpio_17xx_40xx.c
+ 
+Building file: ../src/gpioint_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpioint_17xx_40xx.d" -MT"src/gpioint_17xx_40xx.o" -MT"src/gpioint_17xx_40xx.d" -o "src/gpioint_17xx_40xx.o" "../src/gpioint_17xx_40xx.c"
+Finished building: ../src/gpioint_17xx_40xx.c
+ 
+Building file: ../src/i2c_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2c_17xx_40xx.d" -MT"src/i2c_17xx_40xx.o" -MT"src/i2c_17xx_40xx.d" -o "src/i2c_17xx_40xx.o" "../src/i2c_17xx_40xx.c"
+Finished building: ../src/i2c_17xx_40xx.c
+ 
+Building file: ../src/i2s_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2s_17xx_40xx.d" -MT"src/i2s_17xx_40xx.o" -MT"src/i2s_17xx_40xx.d" -o "src/i2s_17xx_40xx.o" "../src/i2s_17xx_40xx.c"
+Finished building: ../src/i2s_17xx_40xx.c
+ 
+Building file: ../src/iap.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iap.d" -MT"src/iap.o" -MT"src/iap.d" -o "src/iap.o" "../src/iap.c"
+Finished building: ../src/iap.c
+ 
+Building file: ../src/iocon_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iocon_17xx_40xx.d" -MT"src/iocon_17xx_40xx.o" -MT"src/iocon_17xx_40xx.d" -o "src/iocon_17xx_40xx.o" "../src/iocon_17xx_40xx.c"
+Finished building: ../src/iocon_17xx_40xx.c
+ 
+Building file: ../src/lcd_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lcd_17xx_40xx.d" -MT"src/lcd_17xx_40xx.o" -MT"src/lcd_17xx_40xx.d" -o "src/lcd_17xx_40xx.o" "../src/lcd_17xx_40xx.c"
+Finished building: ../src/lcd_17xx_40xx.c
+ 
+Building file: ../src/pmu_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pmu_17xx_40xx.d" -MT"src/pmu_17xx_40xx.o" -MT"src/pmu_17xx_40xx.d" -o "src/pmu_17xx_40xx.o" "../src/pmu_17xx_40xx.c"
+Finished building: ../src/pmu_17xx_40xx.c
+ 
+Building file: ../src/ring_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ring_buffer.d" -MT"src/ring_buffer.o" -MT"src/ring_buffer.d" -o "src/ring_buffer.o" "../src/ring_buffer.c"
+Finished building: ../src/ring_buffer.c
+ 
+Building file: ../src/ritimer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ritimer_17xx_40xx.d" -MT"src/ritimer_17xx_40xx.o" -MT"src/ritimer_17xx_40xx.d" -o "src/ritimer_17xx_40xx.o" "../src/ritimer_17xx_40xx.c"
+Finished building: ../src/ritimer_17xx_40xx.c
+ 
+Building file: ../src/rtc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/rtc_17xx_40xx.d" -MT"src/rtc_17xx_40xx.o" -MT"src/rtc_17xx_40xx.d" -o "src/rtc_17xx_40xx.o" "../src/rtc_17xx_40xx.c"
+Finished building: ../src/rtc_17xx_40xx.c
+ 
+Building file: ../src/sdc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdc_17xx_40xx.d" -MT"src/sdc_17xx_40xx.o" -MT"src/sdc_17xx_40xx.d" -o "src/sdc_17xx_40xx.o" "../src/sdc_17xx_40xx.c"
+Finished building: ../src/sdc_17xx_40xx.c
+ 
+Building file: ../src/sdmmc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdmmc_17xx_40xx.d" -MT"src/sdmmc_17xx_40xx.o" -MT"src/sdmmc_17xx_40xx.d" -o "src/sdmmc_17xx_40xx.o" "../src/sdmmc_17xx_40xx.c"
+Finished building: ../src/sdmmc_17xx_40xx.c
+ 
+Building file: ../src/spi_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/spi_17xx_40xx.d" -MT"src/spi_17xx_40xx.o" -MT"src/spi_17xx_40xx.d" -o "src/spi_17xx_40xx.o" "../src/spi_17xx_40xx.c"
+../src/spi_17xx_40xx.c: In function 'Chip_SPI_Int_FlushData':
+../src/spi_17xx_40xx.c:138:20: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t tmp;
+                    ^~~
+Finished building: ../src/spi_17xx_40xx.c
+ 
+Building file: ../src/ssp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ssp_17xx_40xx.d" -MT"src/ssp_17xx_40xx.o" -MT"src/ssp_17xx_40xx.d" -o "src/ssp_17xx_40xx.o" "../src/ssp_17xx_40xx.c"
+Finished building: ../src/ssp_17xx_40xx.c
+ 
+Building file: ../src/stopwatch_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/stopwatch_17xx_40xx.d" -MT"src/stopwatch_17xx_40xx.o" -MT"src/stopwatch_17xx_40xx.d" -o "src/stopwatch_17xx_40xx.o" "../src/stopwatch_17xx_40xx.c"
+Finished building: ../src/stopwatch_17xx_40xx.c
+ 
+Building file: ../src/sysctl_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysctl_17xx_40xx.d" -MT"src/sysctl_17xx_40xx.o" -MT"src/sysctl_17xx_40xx.d" -o "src/sysctl_17xx_40xx.o" "../src/sysctl_17xx_40xx.c"
+Finished building: ../src/sysctl_17xx_40xx.c
+ 
+Building file: ../src/sysinit_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit_17xx_40xx.d" -MT"src/sysinit_17xx_40xx.o" -MT"src/sysinit_17xx_40xx.d" -o "src/sysinit_17xx_40xx.o" "../src/sysinit_17xx_40xx.c"
+Finished building: ../src/sysinit_17xx_40xx.c
+ 
+Building file: ../src/timer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/timer_17xx_40xx.d" -MT"src/timer_17xx_40xx.o" -MT"src/timer_17xx_40xx.d" -o "src/timer_17xx_40xx.o" "../src/timer_17xx_40xx.c"
+Finished building: ../src/timer_17xx_40xx.c
+ 
+Building file: ../src/uart_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/uart_17xx_40xx.d" -MT"src/uart_17xx_40xx.o" -MT"src/uart_17xx_40xx.d" -o "src/uart_17xx_40xx.o" "../src/uart_17xx_40xx.c"
+Finished building: ../src/uart_17xx_40xx.c
+ 
+Building file: ../src/wwdt_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/wwdt_17xx_40xx.d" -MT"src/wwdt_17xx_40xx.o" -MT"src/wwdt_17xx_40xx.d" -o "src/wwdt_17xx_40xx.o" "../src/wwdt_17xx_40xx.c"
+Finished building: ../src/wwdt_17xx_40xx.c
+ 
+Building target: liblpc_chip_175x_6x.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_chip_175x_6x.a"  ./src/adc_17xx_40xx.o ./src/can_17xx_40xx.o ./src/chip_17xx_40xx.o ./src/clock_17xx_40xx.o ./src/cmp_17xx_40xx.o ./src/crc_17xx_40xx.o ./src/dac_17xx_40xx.o ./src/eeprom_17xx_40xx.o ./src/emc_17xx_40xx.o ./src/enet_17xx_40xx.o ./src/gpdma_17xx_40xx.o ./src/gpio_17xx_40xx.o ./src/gpioint_17xx_40xx.o ./src/i2c_17xx_40xx.o ./src/i2s_17xx_40xx.o ./src/iap.o ./src/iocon_17xx_40xx.o ./src/lcd_17xx_40xx.o ./src/pmu_17xx_40xx.o ./src/ring_buffer.o ./src/ritimer_17xx_40xx.o ./src/rtc_17xx_40xx.o ./src/sdc_17xx_40xx.o ./src/sdmmc_17xx_40xx.o ./src/spi_17xx_40xx.o ./src/ssp_17xx_40xx.o ./src/stopwatch_17xx_40xx.o ./src/sysctl_17xx_40xx.o ./src/sysinit_17xx_40xx.o ./src/timer_17xx_40xx.o ./src/uart_17xx_40xx.o ./src/wwdt_17xx_40xx.o   
+arm-none-eabi-ar: creating liblpc_chip_175x_6x.a
+Finished building target: liblpc_chip_175x_6x.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_chip_175x_6x.a" ; # arm-none-eabi-objdump -h -S "liblpc_chip_175x_6x.a" >"liblpc_chip_175x_6x.lss"
+   text	   data	    bss	    dec	    hex	filename
+    928	      0	      0	    928	    3a0	adc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   8628	      0	      0	   8628	   21b4	can_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    172	      0	      0	    172	     ac	chip_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1596	      0	      0	   1596	    63c	clock_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	cmp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	crc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    140	      0	      0	    140	     8c	dac_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	eeprom_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	emc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1089	      0	      4	   1093	    445	enet_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2244	     96	      8	   2348	    92c	gpdma_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpio_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpioint_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   3601	     84	    120	   3805	    edd	i2c_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1462	      0	      0	   1462	    5b6	i2s_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    552	      0	      0	    552	    228	iap.o (ex liblpc_chip_175x_6x.a)
+    300	      0	      0	    300	    12c	iocon_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	lcd_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    264	      0	      0	    264	    108	pmu_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    962	      0	      0	    962	    3c2	ring_buffer.o (ex liblpc_chip_175x_6x.a)
+    238	      0	      0	    238	     ee	ritimer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    738	      0	      0	    738	    2e2	rtc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdmmc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1036	      0	      0	   1036	    40c	spi_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2270	      0	      0	   2270	    8de	ssp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    362	      0	     12	    374	    176	stopwatch_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     44	      0	      0	     44	     2c	sysctl_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    470	      0	      0	    470	    1d6	sysinit_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    310	      0	      0	    310	    136	timer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2274	      0	      1	   2275	    8e3	uart_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     94	      0	      0	     94	     5e	wwdt_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+ 
+15:41:58 **** Build of configuration Debug for project project_alan ****
+make -r -j4 all 
+Building file: ../src/cr_startup_lpc175x_6x.c
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crp.d" -MT"src/crp.o" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/cr_startup_lpc175x_6x.d" -MT"src/cr_startup_lpc175x_6x.o" -MT"src/cr_startup_lpc175x_6x.d" -o "src/cr_startup_lpc175x_6x.o" "../src/cr_startup_lpc175x_6x.c"
+Building file: ../src/project_alan.c
+Invoking: MCU C Compiler
+Building file: ../src/sysinit.c
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/project_alan.d" -MT"src/project_alan.o" -MT"src/project_alan.d" -o "src/project_alan.o" "../src/project_alan.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+Finished building: ../src/crp.c
+ 
+Finished building: ../src/cr_startup_lpc175x_6x.c
+ 
+Finished building: ../src/project_alan.c
+ 
+Finished building: ../src/sysinit.c
+ 
+Building target: project_alan.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/Debug" -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/Debug" -Xlinker -Map="project_alan.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "project_alan_Debug.ld" -o "project_alan.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/project_alan.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        3120 B       512 KB      0.60%
+        RamLoc32:           8 B        32 KB      0.02%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: project_alan.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "project_alan.axf"; # arm-none-eabi-objcopy -v -O binary "project_alan.axf" "project_alan.bin" ; # checksum -p LPC1769 -d "project_alan.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3120	      0	      8	   3128	    c38	project_alan.axf
+ 
+15:49:51 **** Clean-only build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r clean 
+rm -rf  ./src/board.o ./src/board_sysinit.o ./src/lpc_phy_smsc87x0.o  ./src/board.d ./src/board_sysinit.d ./src/lpc_phy_smsc87x0.d  liblpc_board_nxp_lpcxpresso_1769.a
+ 
+15:49:51 **** Clean-only build of configuration Debug for project lpc_chip_175x_6x ****
+make -r clean 
+rm -rf  ./src/adc_17xx_40xx.o ./src/can_17xx_40xx.o ./src/chip_17xx_40xx.o ./src/clock_17xx_40xx.o ./src/cmp_17xx_40xx.o ./src/crc_17xx_40xx.o ./src/dac_17xx_40xx.o ./src/eeprom_17xx_40xx.o ./src/emc_17xx_40xx.o ./src/enet_17xx_40xx.o ./src/gpdma_17xx_40xx.o ./src/gpio_17xx_40xx.o ./src/gpioint_17xx_40xx.o ./src/i2c_17xx_40xx.o ./src/i2s_17xx_40xx.o ./src/iap.o ./src/iocon_17xx_40xx.o ./src/lcd_17xx_40xx.o ./src/pmu_17xx_40xx.o ./src/ring_buffer.o ./src/ritimer_17xx_40xx.o ./src/rtc_17xx_40xx.o ./src/sdc_17xx_40xx.o ./src/sdmmc_17xx_40xx.o ./src/spi_17xx_40xx.o ./src/ssp_17xx_40xx.o ./src/stopwatch_17xx_40xx.o ./src/sysctl_17xx_40xx.o ./src/sysinit_17xx_40xx.o ./src/timer_17xx_40xx.o ./src/uart_17xx_40xx.o ./src/wwdt_17xx_40xx.o  ./src/adc_17xx_40xx.d ./src/can_17xx_40xx.d ./src/chip_17xx_40xx.d ./src/clock_17xx_40xx.d ./src/cmp_17xx_40xx.d ./src/crc_17xx_40xx.d ./src/dac_17xx_40xx.d ./src/eeprom_17xx_40xx.d ./src/emc_17xx_40xx.d ./src/enet_17xx_40xx.d ./src/gpdma_17xx_40xx.d ./src/gpio_17xx_40xx.d ./src/gpioint_17xx_40xx.d ./src/i2c_17xx_40xx.d ./src/i2s_17xx_40xx.d ./src/iap.d ./src/iocon_17xx_40xx.d ./src/lcd_17xx_40xx.d ./src/pmu_17xx_40xx.d ./src/ring_buffer.d ./src/ritimer_17xx_40xx.d ./src/rtc_17xx_40xx.d ./src/sdc_17xx_40xx.d ./src/sdmmc_17xx_40xx.d ./src/spi_17xx_40xx.d ./src/ssp_17xx_40xx.d ./src/stopwatch_17xx_40xx.d ./src/sysctl_17xx_40xx.d ./src/sysinit_17xx_40xx.d ./src/timer_17xx_40xx.d ./src/uart_17xx_40xx.d ./src/wwdt_17xx_40xx.d  liblpc_chip_175x_6x.a
+ 
+15:50:02 **** Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+Building file: ../src/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -DDEBUG_SEMIHOSTING -DDEBUG_ENABLE -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+In file included from ../src/board.c:32:0:
+/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:58:0: warning: "DEBUG_ENABLE" redefined
+ #define DEBUG_ENABLE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+../src/board.c:59:1: warning: "/*" within comment [-Wcomment]
+ /*****************************************************************************
+  
+../src/board.c: In function 'Board_I2C_Init':
+../src/board.c:297:2: warning: enumeration value 'I2C_NUM_INTERFACE' not handled in switch [-Wswitch]
+  switch (id) {
+  ^~~~~~
+Finished building: ../src/board.c
+ 
+Building file: ../src/board_sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -DDEBUG_SEMIHOSTING -DDEBUG_ENABLE -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board_sysinit.d" -MT"src/board_sysinit.o" -MT"src/board_sysinit.d" -o "src/board_sysinit.o" "../src/board_sysinit.c"
+In file included from ../src/board_sysinit.c:32:0:
+/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:58:0: warning: "DEBUG_ENABLE" redefined
+ #define DEBUG_ENABLE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/board_sysinit.c
+ 
+Building file: ../src/lpc_phy_smsc87x0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -DDEBUG_SEMIHOSTING -DDEBUG_ENABLE -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lpc_phy_smsc87x0.d" -MT"src/lpc_phy_smsc87x0.o" -MT"src/lpc_phy_smsc87x0.d" -o "src/lpc_phy_smsc87x0.o" "../src/lpc_phy_smsc87x0.c"
+In file included from /home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/lpc_phy.h:35:0,
+                 from ../src/lpc_phy_smsc87x0.c:33:
+/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:58:0: warning: "DEBUG_ENABLE" redefined
+ #define DEBUG_ENABLE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Finished building: ../src/lpc_phy_smsc87x0.c
+ 
+Building target: liblpc_board_nxp_lpcxpresso_1769.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_board_nxp_lpcxpresso_1769.a"  ./src/board.o ./src/board_sysinit.o ./src/lpc_phy_smsc87x0.o   
+arm-none-eabi-ar: creating liblpc_board_nxp_lpcxpresso_1769.a
+Finished building target: liblpc_board_nxp_lpcxpresso_1769.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_board_nxp_lpcxpresso_1769.a" ; # arm-none-eabi-objdump -h -S "liblpc_board_nxp_lpcxpresso_1769.a" >"liblpc_board_nxp_lpcxpresso_1769.lss"
+   text	   data	    bss	    dec	    hex	filename
+   2315	      0	      0	   2315	    90b	board.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    202	      0	      0	    202	     ca	board_sysinit.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+    856	      0	     18	    874	    36a	lpc_phy_smsc87x0.o (ex liblpc_board_nxp_lpcxpresso_1769.a)
+ 
+15:50:03 **** Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+Building file: ../src/adc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/adc_17xx_40xx.d" -MT"src/adc_17xx_40xx.o" -MT"src/adc_17xx_40xx.d" -o "src/adc_17xx_40xx.o" "../src/adc_17xx_40xx.c"
+Finished building: ../src/adc_17xx_40xx.c
+ 
+Building file: ../src/can_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/can_17xx_40xx.d" -MT"src/can_17xx_40xx.o" -MT"src/can_17xx_40xx.d" -o "src/can_17xx_40xx.o" "../src/can_17xx_40xx.c"
+../src/can_17xx_40xx.c: In function 'Chip_CAN_Init':
+../src/can_17xx_40xx.c:751:20: warning: variable 'i' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t i;
+                    ^
+Finished building: ../src/can_17xx_40xx.c
+ 
+Building file: ../src/chip_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/chip_17xx_40xx.d" -MT"src/chip_17xx_40xx.o" -MT"src/chip_17xx_40xx.d" -o "src/chip_17xx_40xx.o" "../src/chip_17xx_40xx.c"
+Finished building: ../src/chip_17xx_40xx.c
+ 
+Building file: ../src/clock_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/clock_17xx_40xx.d" -MT"src/clock_17xx_40xx.o" -MT"src/clock_17xx_40xx.d" -o "src/clock_17xx_40xx.o" "../src/clock_17xx_40xx.c"
+../src/clock_17xx_40xx.c: In function 'Chip_Clock_GetSYSCLKRate':
+../src/clock_17xx_40xx.c:320:2: warning: enumeration value 'SYSCTL_PLLCLKSRC_RESERVED2' not handled in switch [-Wswitch]
+  switch (Chip_Clock_GetMainPLLSource()) {
+  ^~~~~~
+Finished building: ../src/clock_17xx_40xx.c
+ 
+Building file: ../src/cmp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/cmp_17xx_40xx.d" -MT"src/cmp_17xx_40xx.o" -MT"src/cmp_17xx_40xx.d" -o "src/cmp_17xx_40xx.o" "../src/cmp_17xx_40xx.c"
+Finished building: ../src/cmp_17xx_40xx.c
+ 
+Building file: ../src/crc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crc_17xx_40xx.d" -MT"src/crc_17xx_40xx.o" -MT"src/crc_17xx_40xx.d" -o "src/crc_17xx_40xx.o" "../src/crc_17xx_40xx.c"
+Finished building: ../src/crc_17xx_40xx.c
+ 
+Building file: ../src/dac_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/dac_17xx_40xx.d" -MT"src/dac_17xx_40xx.o" -MT"src/dac_17xx_40xx.d" -o "src/dac_17xx_40xx.o" "../src/dac_17xx_40xx.c"
+Finished building: ../src/dac_17xx_40xx.c
+ 
+Building file: ../src/eeprom_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/eeprom_17xx_40xx.d" -MT"src/eeprom_17xx_40xx.o" -MT"src/eeprom_17xx_40xx.d" -o "src/eeprom_17xx_40xx.o" "../src/eeprom_17xx_40xx.c"
+Finished building: ../src/eeprom_17xx_40xx.c
+ 
+Building file: ../src/emc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/emc_17xx_40xx.d" -MT"src/emc_17xx_40xx.o" -MT"src/emc_17xx_40xx.d" -o "src/emc_17xx_40xx.o" "../src/emc_17xx_40xx.c"
+Finished building: ../src/emc_17xx_40xx.c
+ 
+Building file: ../src/enet_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/enet_17xx_40xx.d" -MT"src/enet_17xx_40xx.o" -MT"src/enet_17xx_40xx.d" -o "src/enet_17xx_40xx.o" "../src/enet_17xx_40xx.c"
+Finished building: ../src/enet_17xx_40xx.c
+ 
+Building file: ../src/gpdma_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpdma_17xx_40xx.d" -MT"src/gpdma_17xx_40xx.o" -MT"src/gpdma_17xx_40xx.d" -o "src/gpdma_17xx_40xx.o" "../src/gpdma_17xx_40xx.c"
+Finished building: ../src/gpdma_17xx_40xx.c
+ 
+Building file: ../src/gpio_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpio_17xx_40xx.d" -MT"src/gpio_17xx_40xx.o" -MT"src/gpio_17xx_40xx.d" -o "src/gpio_17xx_40xx.o" "../src/gpio_17xx_40xx.c"
+Finished building: ../src/gpio_17xx_40xx.c
+ 
+Building file: ../src/gpioint_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/gpioint_17xx_40xx.d" -MT"src/gpioint_17xx_40xx.o" -MT"src/gpioint_17xx_40xx.d" -o "src/gpioint_17xx_40xx.o" "../src/gpioint_17xx_40xx.c"
+Finished building: ../src/gpioint_17xx_40xx.c
+ 
+Building file: ../src/i2c_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2c_17xx_40xx.d" -MT"src/i2c_17xx_40xx.o" -MT"src/i2c_17xx_40xx.d" -o "src/i2c_17xx_40xx.o" "../src/i2c_17xx_40xx.c"
+Finished building: ../src/i2c_17xx_40xx.c
+ 
+Building file: ../src/i2s_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/i2s_17xx_40xx.d" -MT"src/i2s_17xx_40xx.o" -MT"src/i2s_17xx_40xx.d" -o "src/i2s_17xx_40xx.o" "../src/i2s_17xx_40xx.c"
+Finished building: ../src/i2s_17xx_40xx.c
+ 
+Building file: ../src/iap.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iap.d" -MT"src/iap.o" -MT"src/iap.d" -o "src/iap.o" "../src/iap.c"
+Finished building: ../src/iap.c
+ 
+Building file: ../src/iocon_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/iocon_17xx_40xx.d" -MT"src/iocon_17xx_40xx.o" -MT"src/iocon_17xx_40xx.d" -o "src/iocon_17xx_40xx.o" "../src/iocon_17xx_40xx.c"
+Finished building: ../src/iocon_17xx_40xx.c
+ 
+Building file: ../src/lcd_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lcd_17xx_40xx.d" -MT"src/lcd_17xx_40xx.o" -MT"src/lcd_17xx_40xx.d" -o "src/lcd_17xx_40xx.o" "../src/lcd_17xx_40xx.c"
+Finished building: ../src/lcd_17xx_40xx.c
+ 
+Building file: ../src/pmu_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/pmu_17xx_40xx.d" -MT"src/pmu_17xx_40xx.o" -MT"src/pmu_17xx_40xx.d" -o "src/pmu_17xx_40xx.o" "../src/pmu_17xx_40xx.c"
+Finished building: ../src/pmu_17xx_40xx.c
+ 
+Building file: ../src/ring_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ring_buffer.d" -MT"src/ring_buffer.o" -MT"src/ring_buffer.d" -o "src/ring_buffer.o" "../src/ring_buffer.c"
+Finished building: ../src/ring_buffer.c
+ 
+Building file: ../src/ritimer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ritimer_17xx_40xx.d" -MT"src/ritimer_17xx_40xx.o" -MT"src/ritimer_17xx_40xx.d" -o "src/ritimer_17xx_40xx.o" "../src/ritimer_17xx_40xx.c"
+Finished building: ../src/ritimer_17xx_40xx.c
+ 
+Building file: ../src/rtc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/rtc_17xx_40xx.d" -MT"src/rtc_17xx_40xx.o" -MT"src/rtc_17xx_40xx.d" -o "src/rtc_17xx_40xx.o" "../src/rtc_17xx_40xx.c"
+Finished building: ../src/rtc_17xx_40xx.c
+ 
+Building file: ../src/sdc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdc_17xx_40xx.d" -MT"src/sdc_17xx_40xx.o" -MT"src/sdc_17xx_40xx.d" -o "src/sdc_17xx_40xx.o" "../src/sdc_17xx_40xx.c"
+Finished building: ../src/sdc_17xx_40xx.c
+ 
+Building file: ../src/sdmmc_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sdmmc_17xx_40xx.d" -MT"src/sdmmc_17xx_40xx.o" -MT"src/sdmmc_17xx_40xx.d" -o "src/sdmmc_17xx_40xx.o" "../src/sdmmc_17xx_40xx.c"
+Finished building: ../src/sdmmc_17xx_40xx.c
+ 
+Building file: ../src/spi_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/spi_17xx_40xx.d" -MT"src/spi_17xx_40xx.o" -MT"src/spi_17xx_40xx.d" -o "src/spi_17xx_40xx.o" "../src/spi_17xx_40xx.c"
+../src/spi_17xx_40xx.c: In function 'Chip_SPI_Int_FlushData':
+../src/spi_17xx_40xx.c:138:20: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t tmp;
+                    ^~~
+Finished building: ../src/spi_17xx_40xx.c
+ 
+Building file: ../src/ssp_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/ssp_17xx_40xx.d" -MT"src/ssp_17xx_40xx.o" -MT"src/ssp_17xx_40xx.d" -o "src/ssp_17xx_40xx.o" "../src/ssp_17xx_40xx.c"
+Finished building: ../src/ssp_17xx_40xx.c
+ 
+Building file: ../src/stopwatch_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/stopwatch_17xx_40xx.d" -MT"src/stopwatch_17xx_40xx.o" -MT"src/stopwatch_17xx_40xx.d" -o "src/stopwatch_17xx_40xx.o" "../src/stopwatch_17xx_40xx.c"
+Finished building: ../src/stopwatch_17xx_40xx.c
+ 
+Building file: ../src/sysctl_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysctl_17xx_40xx.d" -MT"src/sysctl_17xx_40xx.o" -MT"src/sysctl_17xx_40xx.d" -o "src/sysctl_17xx_40xx.o" "../src/sysctl_17xx_40xx.c"
+Finished building: ../src/sysctl_17xx_40xx.c
+ 
+Building file: ../src/sysinit_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit_17xx_40xx.d" -MT"src/sysinit_17xx_40xx.o" -MT"src/sysinit_17xx_40xx.d" -o "src/sysinit_17xx_40xx.o" "../src/sysinit_17xx_40xx.c"
+Finished building: ../src/sysinit_17xx_40xx.c
+ 
+Building file: ../src/timer_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/timer_17xx_40xx.d" -MT"src/timer_17xx_40xx.o" -MT"src/timer_17xx_40xx.d" -o "src/timer_17xx_40xx.o" "../src/timer_17xx_40xx.c"
+Finished building: ../src/timer_17xx_40xx.c
+ 
+Building file: ../src/uart_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/uart_17xx_40xx.d" -MT"src/uart_17xx_40xx.o" -MT"src/uart_17xx_40xx.d" -o "src/uart_17xx_40xx.o" "../src/uart_17xx_40xx.c"
+Finished building: ../src/uart_17xx_40xx.c
+ 
+Building file: ../src/wwdt_17xx_40xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/wwdt_17xx_40xx.d" -MT"src/wwdt_17xx_40xx.o" -MT"src/wwdt_17xx_40xx.d" -o "src/wwdt_17xx_40xx.o" "../src/wwdt_17xx_40xx.c"
+Finished building: ../src/wwdt_17xx_40xx.c
+ 
+Building target: liblpc_chip_175x_6x.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "liblpc_chip_175x_6x.a"  ./src/adc_17xx_40xx.o ./src/can_17xx_40xx.o ./src/chip_17xx_40xx.o ./src/clock_17xx_40xx.o ./src/cmp_17xx_40xx.o ./src/crc_17xx_40xx.o ./src/dac_17xx_40xx.o ./src/eeprom_17xx_40xx.o ./src/emc_17xx_40xx.o ./src/enet_17xx_40xx.o ./src/gpdma_17xx_40xx.o ./src/gpio_17xx_40xx.o ./src/gpioint_17xx_40xx.o ./src/i2c_17xx_40xx.o ./src/i2s_17xx_40xx.o ./src/iap.o ./src/iocon_17xx_40xx.o ./src/lcd_17xx_40xx.o ./src/pmu_17xx_40xx.o ./src/ring_buffer.o ./src/ritimer_17xx_40xx.o ./src/rtc_17xx_40xx.o ./src/sdc_17xx_40xx.o ./src/sdmmc_17xx_40xx.o ./src/spi_17xx_40xx.o ./src/ssp_17xx_40xx.o ./src/stopwatch_17xx_40xx.o ./src/sysctl_17xx_40xx.o ./src/sysinit_17xx_40xx.o ./src/timer_17xx_40xx.o ./src/uart_17xx_40xx.o ./src/wwdt_17xx_40xx.o   
+arm-none-eabi-ar: creating liblpc_chip_175x_6x.a
+Finished building target: liblpc_chip_175x_6x.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "liblpc_chip_175x_6x.a" ; # arm-none-eabi-objdump -h -S "liblpc_chip_175x_6x.a" >"liblpc_chip_175x_6x.lss"
+   text	   data	    bss	    dec	    hex	filename
+    928	      0	      0	    928	    3a0	adc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   8628	      0	      0	   8628	   21b4	can_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    172	      0	      0	    172	     ac	chip_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1596	      0	      0	   1596	    63c	clock_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	cmp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	crc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    140	      0	      0	    140	     8c	dac_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	eeprom_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	emc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1089	      0	      4	   1093	    445	enet_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2244	     96	      8	   2348	    92c	gpdma_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpio_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	gpioint_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   3601	     84	    120	   3805	    edd	i2c_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1462	      0	      0	   1462	    5b6	i2s_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    552	      0	      0	    552	    228	iap.o (ex liblpc_chip_175x_6x.a)
+    300	      0	      0	    300	    12c	iocon_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	lcd_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    264	      0	      0	    264	    108	pmu_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    962	      0	      0	    962	    3c2	ring_buffer.o (ex liblpc_chip_175x_6x.a)
+    238	      0	      0	    238	     ee	ritimer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    738	      0	      0	    738	    2e2	rtc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+      0	      0	      0	      0	      0	sdmmc_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   1036	      0	      0	   1036	    40c	spi_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2270	      0	      0	   2270	    8de	ssp_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    362	      0	     12	    374	    176	stopwatch_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     44	      0	      0	     44	     2c	sysctl_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    470	      0	      0	    470	    1d6	sysinit_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+    310	      0	      0	    310	    136	timer_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+   2274	      0	      1	   2275	    8e3	uart_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+     94	      0	      0	     94	     5e	wwdt_17xx_40xx.o (ex liblpc_chip_175x_6x.a)
+ 
+15:50:07 **** Build of configuration Debug for project trailproje ****
+make -r -j4 all 
+Building file: ../src/cr_startup_lpc175x_6x.c
+Building file: ../src/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/cr_startup_lpc175x_6x.d" -MT"src/cr_startup_lpc175x_6x.o" -MT"src/cr_startup_lpc175x_6x.d" -o "src/cr_startup_lpc175x_6x.o" "../src/cr_startup_lpc175x_6x.c"
+Building file: ../src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/crp.d" -MT"src/crp.o" -MT"src/crp.d" -o "src/crp.o" "../src/crp.c"
+Building file: ../src/trailproje.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/trailproje.d" -MT"src/trailproje.o" -MT"src/trailproje.d" -o "src/trailproje.o" "../src/trailproje.c"
+Finished building: ../src/crp.c
+ 
+Finished building: ../src/cr_startup_lpc175x_6x.c
+ 
+Finished building: ../src/trailproje.c
+ 
+Finished building: ../src/sysinit.c
+ 
+Building target: trailproje.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_board_nxp_lpcxpresso_1769/Debug" -L"/home/mathew/git/MCUexpressoLPC1769/MCUXpresso_10.3.1_2233/workspace/lpc_chip_175x_6x/Debug" -Xlinker -Map="trailproje.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "trailproje_Debug.ld" -o "trailproje.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o ./src/trailproje.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        3120 B       512 KB      0.60%
+        RamLoc32:           8 B        32 KB      0.02%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: trailproje.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "trailproje.axf"; # arm-none-eabi-objcopy -v -O binary "trailproje.axf" "trailproje.bin" ; # checksum -p LPC1769 -d "trailproje.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3120	      0	      8	   3128	    c38	trailproje.axf
+ 
