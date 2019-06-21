@@ -6,7 +6,6 @@
 //Athira Shajan - C0730123
 
 
-
 //EMBT, Lambton college
 Freertos LED Blink on LPC 1769
 
