@@ -1,7 +1,6 @@
 /*
  * Author- Lino Mathew Samuel, Hariprasad Athiparambath, Athira Shajan
  *
-
  *
  *
  * @brief FreeRTOS Blinky example
