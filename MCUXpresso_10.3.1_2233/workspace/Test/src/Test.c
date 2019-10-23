@@ -24,7 +24,6 @@
 
 void dot(){
 	unsigned long int i1,j1;
-
 	for(j1=0;j1<100;j1++)for(i1=0;i1<30000;i1++);
 	for(j1=0;j1<100;j1++)for(i1=0;i1<30000;i1++);
 }
