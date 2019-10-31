@@ -1,5 +1,5 @@
 #  MCUexpressoLPC1769
-//Lino M Samuel- C0728596
+//Lino M Samuel
 //EMBT, Lambton college
 Freertos LPC 1769
 
